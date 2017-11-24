@@ -4,7 +4,7 @@
 
 <head>
 <meta charset="utf-8"/>
-<title>Dashboard</title>
+<title>Thống kê sản Phẩm</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="" name="description"/>
@@ -38,6 +38,9 @@
 <link href="../../assets/global/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet"/>
 <link href="../../assets/global/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet"/>
 <!-- END PAGE LEVEL STYLES -->
+<!-- table -->
+<link rel="stylesheet" type="text/css" href="../../assets/global/plugins/select2/select2.css"/>
+<link rel="stylesheet" type="text/css" href="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
 </head>
 
 <body class="page-header-fixed page-quick-sidebar-over-content page-style-square"> 
@@ -731,7 +734,7 @@
 			<!-- END STYLE CUSTOMIZER -->
 			<!-- BEGIN PAGE HEADER-->
 			<h3 class="page-title">
-			Thêm Sản Phẩm <small></small>
+			Cập Sản Phẩm <small></small>
 			</h3>
 			<div class="page-bar">
 				<ul class="page-breadcrumb">
@@ -745,18 +748,21 @@
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">thêm sản phẩm</a>
+						<a href="#">Thống kê sản phẩm</a>
 					</li>
 				</ul>
 			</div>
 			<!-- END PAGE HEADER-->
+			
+			
+
 			<div class="row">
 				<div class="col-md-12">
-					<!-- BEGIN VALIDATION STATES-->
-					<div class="portlet box purple">
+					<!-- BEGIN SAMPLE TABLE PORTLET-->
+					<div class="portlet box green">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-gift"></i>Thông tin sản phẩm
+								<i class="fa fa-cogs"></i>Tổng số sản phấm
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="collapse">
@@ -769,55 +775,152 @@
 								</a>
 							</div>
 						</div>
-						<div class="portlet-body form">
-							<!-- BEGIN FORM-->
-							<form action="#" id="form_sample_1" class="form-horizontal">
-								<div class="form-body">
-									<div class="alert alert-danger display-hide">
-										<button class="close" data-close="alert"></button>
-										You have some form errors. Please check below.
-									</div>
-									<div class="alert alert-success display-hide">
-										<button class="close" data-close="alert"></button>
-										Your form validation is successful!
-									</div>
+
+						<div class="portlet-body flip-scroll">
+							<div class="row">
+								<form>
 									<div class="form-group">
-										<label class="control-label col-md-3">Mã sản phẩm<span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<input type="text" name="name" data-required="1" class="form-control"/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Tên sản phẩm <span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<input name="email" type="text" class="form-control"/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Giá nhập sản phẩm <span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<input name="url" type="text" class="form-control"/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Giá bán sản phẩm <span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<input name="number" type="text" class="form-control"/>
-										</div>
-									</div>
+								<label class="control-label col-md-3"> Thời gian thống kê <span class="required">
+								* </span>
+								</label>
+								<div class="col-md-3">
+									<select class="form-control" name="select">
+										<option value="">Select...</option>
+										<option value="Category 1">Category 1</option>
+										<option value="Category 2">Category 2</option>
+										<option value="Category 3">Category 5</option>
+										<option value="Category 4">Category 4</option>
+									</select>
+								</div>
+								<div class="col-md-3">
+									<button class="btn btn-success">Thống kê mới</button>
+								</div>
+							</div>
+								</form>
+							</div>
+							
+							<br>
+							
+
+							<table class="table table-bordered table-striped table-condensed flip-content">
+							<thead class="flip-content">
+							<tr>
+								<th width="20%">
+									 Mã sản phẩm
+								</th>
+								<th>
+									 Tên sản phẩm
+								</th>
+								<th class="numeric">
+									 Doanh thu
+								</th>
+								<th class="numeric">
+									 Tổng số lượng
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr> 	
+							</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- END SAMPLE TABLE PORTLET-->
+					<!-- BEGIN SAMPLE TABLE PORTLET-->
+					<div class="portlet box green">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-cogs"></i>Thống kê theo danh mục & sản phẩm
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+								<a href="javascript:;" class="remove">
+								</a>
+							</div>
+						</div>
+
+						<div class="portlet-body flip-scroll">
+							<div class="row">
+								<form>
 									<div class="form-group">
 										<label class="control-label col-md-3">Danh mục sản phẩm <span class="required">
 										* </span>
 										</label>
-										<div class="col-md-4">
+										<div class="col-md-3">
 											<select class="form-control" name="select">
 												<option value="">Select...</option>
 												<option value="Category 1">Category 1</option>
@@ -828,80 +931,239 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">Hình ảnh <span class="required">
+										<label class="control-label col-md-3">Sản phẩm <span class="required">
 										* </span>
 										</label>
-										<div class="row">
-											<div class="col-md-12">
-
-												<br>
-												<form id="fileupload" action="../../assets/global/plugins/jquery-file-upload/server/php/" method="POST" enctype="multipart/form-data">
-													<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
-													<div class="row fileupload-buttonbar">
-														<div class="col-lg-7 col-lg-offset-3">
-															<!-- The fileinput-button span is used to style the file input field as button -->
-															<span class="btn green fileinput-button">
-																<i class="fa fa-plus"></i>
-																<span>
-																Add files... </span>
-																<input type="file" name="files[]" multiple="">
-															</span>
-															<!-- <button type="submit" class="btn blue start">
-																<i class="fa fa-upload"></i>
-																<span>
-																Start upload </span>
-															</button>
-															<button type="reset" class="btn warning cancel">
-																<i class="fa fa-ban-circle"></i>
-																<span>
-																Cancel upload </span>
-															</button> -->
-															<button type="button" class="btn red delete">
-																<i class="fa fa-trash"></i>
-																<span>
-																Delete </span>
-															</button>
-															<!-- <input type="checkbox" class="toggle"> -->
-															<!-- The global file processing state -->
-															<!-- <span class="fileupload-process">
-															</span> -->
-														</div>
-														<!-- The global progress information -->
-														<div class="col-lg-5 fileupload-progress fade">
-															<!-- The global progress bar -->
-															<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-																<div class="progress-bar progress-bar-success" style="width:0%;">
-																</div>
-															</div>
-															<!-- The extended global progress information -->
-															<div class="progress-extended">
-																&nbsp;
-															</div>
-														</div>
-													</div>
-													<!-- The table listing the files available for upload/download -->
-													<table role="presentation" class="table table-striped clearfix">
-														<tbody class="files">
-														</tbody>
-													</table>
-												</form>
-											</div>
+										<div class="col-md-3">
+											<select class="form-control" name="select">
+												<option value="">Select...</option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+												<option value="Category 3">Category 5</option>
+												<option value="Category 4">Category 4</option>
+											</select>
 										</div>
 									</div>
-								</div>
-								<div class="form-actions">
-									<div class="row">
-										<div class="col-md-offset-3 col-md-9">
-											<button type="submit" class="btn green">Thêm sản phẩm</button>
-											<button type="button" class="btn default">Hủy</button>
-										</div>
-									</div>
-								</div>
-							</form>
-							<!-- END FORM-->
+								</form>
+							</div>
+							<div style="text-align: center; margin-bottom: 10px; padding-top: 10px;">
+								<button class="btn btn-success">Thống kê</button>
+							</div>
+							<table class="table table-bordered table-striped table-condensed flip-content">
+							<thead class="flip-content">
+							<tr>
+								<th width="20%">
+									 Mã sản phẩm
+								</th>
+								<th>
+									 Tên sản phẩm
+								</th>
+								<th class="numeric">
+									 Doanh thu
+								</th>
+								<th class="numeric">
+									 Tổng số lượng
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr> 	
+							</tbody>
+							</table>
 						</div>
 					</div>
-					<!-- END VALIDATION STATES-->
+					<!-- END SAMPLE TABLE PORTLET-->
+					<!-- BEGIN SAMPLE TABLE PORTLET-->
+					<div class="portlet box green">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-cogs"></i>Thống kê theo doanh thu
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+								<a href="javascript:;" class="remove">
+								</a>
+							</div>
+						</div>
+
+						<div class="portlet-body flip-scroll">
+							<div class="col-md-4 col-md-offset-4">
+								<div class="input-group" style="text-align:left">
+									<input type="text" class="form-control" placeholder="Nhập doanh thu" name="username1" id="username1_input">
+									<span class="input-group-btn">
+										<a href="javascript:;" class="btn green" id="username1_checker">
+											<i class="fa fa-search"></i> Thống kê </a>
+										</span>
+								</div>
+								<br>
+							</div>
+							<table class="table table-bordered table-striped table-condensed flip-content">
+							<thead class="flip-content">
+							<tr>
+								<th width="20%">
+									 Mã sản phẩm
+								</th>
+								<th>
+									 Tên sản phẩm
+								</th>
+								<th class="numeric">
+									 Doanh thu
+								</th>
+								<th class="numeric">
+									 Tổng số lượng
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 AAC
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 1.000.000.000
+								</td>
+								<td class="numeric">
+									 1000
+								</td>
+							</tr> 	
+							</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- END SAMPLE TABLE PORTLET-->
 				</div>
 			</div>
 		</div>
@@ -913,7 +1175,7 @@
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		  2017 &copy; DBMS Training
+		 2017 &copy; DBMS Training
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
@@ -986,18 +1248,21 @@
 
 <script src="../../assets/admin/pages/scripts/form-fileupload.js"></script>
 <!-- The main application script -->
-<script>
-	jQuery(document).ready(function() {
-
-		Metronic.init(); 
-		Layout.init(); 
-		QuickSidebar.init(); 
-		Demo.init(); 
-		FormFileUpload.init();
-		FormValidation.init();
-	});
-</script>
+<!-- table -->
+<script type="text/javascript" src="../../assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script src="../../assets/admin/pages/scripts/table-managed.js"></script>
 <!-- END JAVASCRIPTS -->
+<script>
+jQuery(document).ready(function() {       
+   Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+QuickSidebar.init(); // init quick sidebar
+Demo.init(); // init demo features
+   TableManaged.init();
+});
+</script>
 </body>
 <!-- END BODY -->
 </html>

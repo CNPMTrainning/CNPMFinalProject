@@ -4,7 +4,7 @@
 
 <head>
 <meta charset="utf-8"/>
-<title>Dashboard</title>
+<title>Thêm Danh Mục</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="" name="description"/>
@@ -38,6 +38,9 @@
 <link href="../../assets/global/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet"/>
 <link href="../../assets/global/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet"/>
 <!-- END PAGE LEVEL STYLES -->
+<!-- table -->
+<link rel="stylesheet" type="text/css" href="../../assets/global/plugins/select2/select2.css"/>
+<link rel="stylesheet" type="text/css" href="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
 </head>
 
 <body class="page-header-fixed page-quick-sidebar-over-content page-style-square"> 
@@ -741,11 +744,11 @@
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">Quản lý sản phẩm</a>
+						<a href="#">Quản lý danh mục</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">thêm sản phẩm</a>
+						<a href="#">cập nhật danh mục</a>
 					</li>
 				</ul>
 			</div>
@@ -756,7 +759,7 @@
 					<div class="portlet box purple">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-gift"></i>Thông tin sản phẩm
+								<i class="fa fa-gift"></i>Thông tin danh mục
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="collapse">
@@ -769,7 +772,92 @@
 								</a>
 							</div>
 						</div>
-						<div class="portlet-body form">
+						<div class="portlet-body">
+							<div class="row">
+								<div class="col-md-4 col-md-offset-4">
+									<div class="input-group" style="text-align:left">
+										<input type="text" class="form-control" name="username1" id="username1_input">
+										<span class="input-group-btn">
+											<a href="javascript:;" class="btn green" id="username1_checker">
+												<i class="fa fa-search"></i> Tìm kiếm danh mục </a>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix" style="margin-bottom: 10px;"></div>
+							<br>
+							<table class="table table-bordered table-striped table-condensed flip-content">
+							<thead class="flip-content">
+							<tr>
+								<th width="20%">
+									 <input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"/>
+								</th>
+								<th>
+									 Mã danh mục
+								</th>
+								<th class="numeric">
+									 Tên danh mục
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr> 	
+							</tbody>
+							</table> 	
 							<!-- BEGIN FORM-->
 							<form action="#" id="form_sample_1" class="form-horizontal">
 								<div class="form-body">
@@ -782,117 +870,26 @@
 										Your form validation is successful!
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">Mã sản phẩm<span class="required">
+										<label class="control-label col-md-3">Mã danh mục<span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
-											<input type="text" name="name" data-required="1" class="form-control"/>
+											<input type="text" name="name" data-required="1" class="form-control" readonly="readonly" />
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">Tên sản phẩm <span class="required">
+										<label class="control-label col-md-3">Tên sản danh mục<span class="required">
 										* </span>
 										</label>
 										<div class="col-md-4">
 											<input name="email" type="text" class="form-control"/>
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Giá nhập sản phẩm <span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<input name="url" type="text" class="form-control"/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Giá bán sản phẩm <span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<input name="number" type="text" class="form-control"/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Danh mục sản phẩm <span class="required">
-										* </span>
-										</label>
-										<div class="col-md-4">
-											<select class="form-control" name="select">
-												<option value="">Select...</option>
-												<option value="Category 1">Category 1</option>
-												<option value="Category 2">Category 2</option>
-												<option value="Category 3">Category 5</option>
-												<option value="Category 4">Category 4</option>
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Hình ảnh <span class="required">
-										* </span>
-										</label>
-										<div class="row">
-											<div class="col-md-12">
-
-												<br>
-												<form id="fileupload" action="../../assets/global/plugins/jquery-file-upload/server/php/" method="POST" enctype="multipart/form-data">
-													<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
-													<div class="row fileupload-buttonbar">
-														<div class="col-lg-7 col-lg-offset-3">
-															<!-- The fileinput-button span is used to style the file input field as button -->
-															<span class="btn green fileinput-button">
-																<i class="fa fa-plus"></i>
-																<span>
-																Add files... </span>
-																<input type="file" name="files[]" multiple="">
-															</span>
-															<!-- <button type="submit" class="btn blue start">
-																<i class="fa fa-upload"></i>
-																<span>
-																Start upload </span>
-															</button>
-															<button type="reset" class="btn warning cancel">
-																<i class="fa fa-ban-circle"></i>
-																<span>
-																Cancel upload </span>
-															</button> -->
-															<button type="button" class="btn red delete">
-																<i class="fa fa-trash"></i>
-																<span>
-																Delete </span>
-															</button>
-															<!-- <input type="checkbox" class="toggle"> -->
-															<!-- The global file processing state -->
-															<!-- <span class="fileupload-process">
-															</span> -->
-														</div>
-														<!-- The global progress information -->
-														<div class="col-lg-5 fileupload-progress fade">
-															<!-- The global progress bar -->
-															<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-																<div class="progress-bar progress-bar-success" style="width:0%;">
-																</div>
-															</div>
-															<!-- The extended global progress information -->
-															<div class="progress-extended">
-																&nbsp;
-															</div>
-														</div>
-													</div>
-													<!-- The table listing the files available for upload/download -->
-													<table role="presentation" class="table table-striped clearfix">
-														<tbody class="files">
-														</tbody>
-													</table>
-												</form>
-											</div>
-										</div>
-									</div>
 								</div>
 								<div class="form-actions">
 									<div class="row">
 										<div class="col-md-offset-3 col-md-9">
-											<button type="submit" class="btn green">Thêm sản phẩm</button>
+											<button type="submit" class="btn green">Cập nhật danh mục</button>
 											<button type="button" class="btn default">Hủy</button>
 										</div>
 									</div>
@@ -986,16 +983,19 @@
 
 <script src="../../assets/admin/pages/scripts/form-fileupload.js"></script>
 <!-- The main application script -->
+<!-- table -->
+<script type="text/javascript" src="../../assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script src="../../assets/admin/pages/scripts/table-managed.js"></script>
 <script>
-	jQuery(document).ready(function() {
-
-		Metronic.init(); 
-		Layout.init(); 
-		QuickSidebar.init(); 
-		Demo.init(); 
-		FormFileUpload.init();
-		FormValidation.init();
-	});
+jQuery(document).ready(function() {       
+   Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+QuickSidebar.init(); // init quick sidebar
+Demo.init(); // init demo features
+   TableManaged.init();
+});
 </script>
 <!-- END JAVASCRIPTS -->
 </body>
