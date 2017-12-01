@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+<head>
+<meta charset="utf-8"/>
+<title>Cập nhật tin tức & sự kiện</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+<link href="../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+<!-- END PAGE LEVEL PLUGIN STYLES -->
+<!-- BEGIN PAGE STYLES -->
+<link href="../../assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
+<!-- END PAGE STYLES -->
+<!-- BEGIN THEME STYLES -->
+<!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
+<link href="../../assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link href="../../assets/global/plugins/jquery-file-upload/blueimp-gallery/blueimp-gallery.min.css" rel="stylesheet"/>
+<link href="../../assets/global/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet"/>
+<link href="../../assets/global/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet"/>
+<!-- END PAGE LEVEL STYLES -->
+</head>
+
+<body class="page-header-fixed page-quick-sidebar-over-content page-style-square"> 
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- BEGIN LOGO -->
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="../../assets/admin/layout/img/logo.png" alt="logo" class="logo-default"/>
+			</a>
+			<div class="menu-toggler sidebar-toggler hide">
+				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+			</div>
+		</div>
+		<!-- END LOGO -->
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<div class="top-menu">
+			<ul class="nav navbar-nav pull-right">
+				<!-- BEGIN NOTIFICATION DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<i class="icon-bell"></i>
+					<span class="badge badge-default">
+					7 </span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="external">
+							<h3><span class="bold">12 pending</span> notifications</h3>
+							<a href="extra_profile.html">view all</a>
+						</li>
+						<li>
+							<ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+								<li>
+									<a href="javascript:;">
+									<span class="time">just now</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-success">
+									<i class="fa fa-plus"></i>
+									</span>
+									New user registered. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">3 mins</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-danger">
+									<i class="fa fa-bolt"></i>
+									</span>
+									Server #12 overloaded. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">10 mins</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-warning">
+									<i class="fa fa-bell-o"></i>
+									</span>
+									Server #2 not responding. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">14 hrs</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-info">
+									<i class="fa fa-bullhorn"></i>
+									</span>
+									Application error. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">2 days</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-danger">
+									<i class="fa fa-bolt"></i>
+									</span>
+									Database overloaded 68%. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">3 days</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-danger">
+									<i class="fa fa-bolt"></i>
+									</span>
+									A user IP blocked. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">4 days</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-warning">
+									<i class="fa fa-bell-o"></i>
+									</span>
+									Storage Server #4 not responding dfdfdfd. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">5 days</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-info">
+									<i class="fa fa-bullhorn"></i>
+									</span>
+									System Error. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">9 days</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-danger">
+									<i class="fa fa-bolt"></i>
+									</span>
+									Storage server failed. </span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- END NOTIFICATION DROPDOWN -->
+				<!-- BEGIN INBOX DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<i class="icon-envelope-open"></i>
+					<span class="badge badge-default">
+					4 </span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="external">
+							<h3>You have <span class="bold">7 New</span> Messages</h3>
+							<a href="page_inbox.html">view all</a>
+						</li>
+						<li>
+							<ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+								<li>
+									<a href="inbox.html?a=view">
+									<span class="photo">
+									<img src="../../assets/admin/layout3/img/avatar2.jpg" class="img-circle" alt="">
+									</span>
+									<span class="subject">
+									<span class="from">
+									Lisa Wong </span>
+									<span class="time">Just Now </span>
+									</span>
+									<span class="message">
+									Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+									</a>
+								</li>
+								<li>
+									<a href="inbox.html?a=view">
+									<span class="photo">
+									<img src="../../assets/admin/layout3/img/avatar3.jpg" class="img-circle" alt="">
+									</span>
+									<span class="subject">
+									<span class="from">
+									Richard Doe </span>
+									<span class="time">16 mins </span>
+									</span>
+									<span class="message">
+									Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+									</a>
+								</li>
+								<li>
+									<a href="inbox.html?a=view">
+									<span class="photo">
+									<img src="../../assets/admin/layout3/img/avatar1.jpg" class="img-circle" alt="">
+									</span>
+									<span class="subject">
+									<span class="from">
+									Bob Nilson </span>
+									<span class="time">2 hrs </span>
+									</span>
+									<span class="message">
+									Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+									</a>
+								</li>
+								<li>
+									<a href="inbox.html?a=view">
+									<span class="photo">
+									<img src="../../assets/admin/layout3/img/avatar2.jpg" class="img-circle" alt="">
+									</span>
+									<span class="subject">
+									<span class="from">
+									Lisa Wong </span>
+									<span class="time">40 mins </span>
+									</span>
+									<span class="message">
+									Vivamus sed auctor 40% nibh congue nibh... </span>
+									</a>
+								</li>
+								<li>
+									<a href="inbox.html?a=view">
+									<span class="photo">
+									<img src="../../assets/admin/layout3/img/avatar3.jpg" class="img-circle" alt="">
+									</span>
+									<span class="subject">
+									<span class="from">
+									Richard Doe </span>
+									<span class="time">46 mins </span>
+									</span>
+									<span class="message">
+									Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- END INBOX DROPDOWN -->
+				<!-- BEGIN TODO DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<i class="icon-calendar"></i>
+					<span class="badge badge-default">
+					3 </span>
+					</a>
+					<ul class="dropdown-menu extended tasks">
+						<li class="external">
+							<h3>You have <span class="bold">12 pending</span> tasks</h3>
+							<a href="page_todo.html">view all</a>
+						</li>
+						<li>
+							<ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+								<li>
+									<a href="javascript:;">
+									<span class="task">
+									<span class="desc">New release v1.2 </span>
+									<span class="percent">30%</span>
+									</span>
+									<span class="progress">
+									<span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">40% Complete</span></span>
+									</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="task">
+									<span class="desc">Application deployment</span>
+									<span class="percent">65%</span>
+									</span>
+									<span class="progress">
+									<span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">65% Complete</span></span>
+									</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="task">
+									<span class="desc">Mobile app release</span>
+									<span class="percent">98%</span>
+									</span>
+									<span class="progress">
+									<span style="width: 98%;" class="progress-bar progress-bar-success" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">98% Complete</span></span>
+									</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="task">
+									<span class="desc">Database migration</span>
+									<span class="percent">10%</span>
+									</span>
+									<span class="progress">
+									<span style="width: 10%;" class="progress-bar progress-bar-warning" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">10% Complete</span></span>
+									</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="task">
+									<span class="desc">Web server upgrade</span>
+									<span class="percent">58%</span>
+									</span>
+									<span class="progress">
+									<span style="width: 58%;" class="progress-bar progress-bar-info" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">58% Complete</span></span>
+									</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="task">
+									<span class="desc">Mobile development</span>
+									<span class="percent">85%</span>
+									</span>
+									<span class="progress">
+									<span style="width: 85%;" class="progress-bar progress-bar-success" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">85% Complete</span></span>
+									</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="task">
+									<span class="desc">New UI release</span>
+									<span class="percent">38%</span>
+									</span>
+									<span class="progress progress-striped">
+									<span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">38% Complete</span></span>
+									</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- END TODO DROPDOWN -->
+				<!-- BEGIN USER LOGIN DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg"/>
+					<span class="username username-hide-on-mobile">
+					Nick </span>
+					<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-default">
+						<li>
+							<a href="extra_profile.html">
+							<i class="icon-user"></i> My Profile </a>
+						</li>
+						<li>
+							<a href="page_calendar.html">
+							<i class="icon-calendar"></i> My Calendar </a>
+						</li>
+						<li>
+							<a href="inbox.html">
+							<i class="icon-envelope-open"></i> My Inbox <span class="badge badge-danger">
+							3 </span>
+							</a>
+						</li>
+						<li>
+							<a href="page_todo.html">
+							<i class="icon-rocket"></i> My Tasks <span class="badge badge-success">
+							7 </span>
+							</a>
+						</li>
+						<li class="divider">
+						</li>
+						<li>
+							<a href="extra_lock.html">
+							<i class="icon-lock"></i> Lock Screen </a>
+						</li>
+						<li>
+							<a href="login.html">
+							<i class="icon-key"></i> Log Out </a>
+						</li>
+					</ul>
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-quick-sidebar-toggler">
+					<a href="javascript:;" class="dropdown-toggle">
+					<i class="icon-logout"></i>
+					</a>
+				</li>
+				<!-- END QUICK SIDEBAR TOGGLER -->
+			</ul>
+		</div>
+		<!-- END TOP NAVIGATION MENU -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+		<div class="page-sidebar navbar-collapse collapse">
+			
+			<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+				
+				<li class="sidebar-toggler-wrapper">
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+					<div class="sidebar-toggler">
+					</div>
+					<!-- END SIDEBAR TOGGLER BUTTON -->
+				</li>
+				
+				<li class="sidebar-search-wrapper">
+					
+					<form class="sidebar-search " action="extra_search.html" method="POST">
+						<a href="javascript:;" class="remove">
+						<i class="icon-close"></i>
+						</a>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search...">
+							<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
+							</span>
+						</div>
+					</form>
+					<!-- END RESPONSIVE QUICK SEARCH FORM -->
+				</li>
+				<li class="start active open">
+					<a href="javascript:;">
+					<i class="icon-home"></i>
+					<span class="title">Bảng Điều Khiển</span>
+					<span class="selected"></span>
+					<span class=" open"></span>
+					</a>
+					
+				</li>
+				<li>
+					<a href="javascript:;">
+					<i class="icon-basket"></i>
+					<span class="title">Quản Lý Đơn Hàng</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="ecommerce_index.html">
+							<i class="icon-home"></i>
+							Đơn Hàng Cũ</a>
+						</li>
+						<li>
+							<a href="ecommerce_orders.html">
+							<i class="icon-basket"></i>
+							Đơn Hàng Mới</a>
+						</li>
+						<li>
+							<a href="ecommerce_orders_view.html">
+							<i class="icon-tag"></i>
+							Thống Kê Đơn Hàng</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
+					<i class="icon-handbag"></i>
+					<span class="title">Quản Lý Sản Phẩm</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="layout_horizontal_sidebar_menu.html">
+							Thêm Sản Phẩm</a>
+						</li>
+						<li>
+							<a href="index_horizontal_menu.html">
+							Sửa Sản Phẩm</a>
+						</li>
+						<li>
+							<a href="layout_horizontal_menu1.html">
+							Xóa Sản Phẩm</a>
+						</li>
+						<li>
+							<a href="layout_horizontal_menu2.html">
+							Thống Kê Sản Phẩm</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
+					<i class="icon-diamond"></i>
+					<span class="title">Quản Lý Danh Mục</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="ui_general.html">
+							Thêm Danh Mục Sản Phẩm</a>
+						</li>
+						<li>
+							<a href="ui_buttons.html">
+							Sửa Danh Mục Sản Phẩm</a>
+						</li>
+						<li>
+							<a href="ui_confirmations.html">
+							Xóa Danh Mục Sản Phẩm</a>
+						</li>
+						<li>
+							<a href="ui_colors.html">
+							Thống Kê Sản Danh Mục</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
+					<i class="icon-puzzle"></i>
+					<span class="title">Quản Lý Người Dùng</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="components_pickers.html">
+							Thêm Người dùng</a>
+						</li>
+						<li>
+							<a href="components_dropdowns.html">
+							Cập Nhật Người dùng</a>
+						</li>
+						<li>
+							<a href="components_form_tools.html">
+							Xóa Người dùng</a>
+						</li>
+						<li>
+							<a href="components_editors.html">
+							Thống Kê Người Dùng</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="heading">
+					<h3 class="uppercase">Quản Lý Trang Chủ</h3>
+				</li>
+				<li>
+					<a href="javascript:;">
+					<i class="icon-settings"></i>
+					<span class="title">Tin Tức & Sự Kiện</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="form_controls.html">
+							Thêm Mới</a>
+						</li>
+						<li>
+							<a href="form_icheck.html">
+							Chỉnh Sửa</a>
+						</li>
+						<li>
+							<a href="form_layouts.html">
+							Xóa</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
+					<i class="icon-briefcase"></i>
+					<span class="title">Hiển Thị Thông Tin</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="table_basic.html">
+							Hiển Thị Trang Chủ</a>
+						</li>
+						<li>
+							<a href="table_responsive.html">
+							Hiển Thị Trang Sản Phẩm</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- END SIDEBAR MENU -->
+		</div>
+	</div>
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<!-- BEGIN STYLE CUSTOMIZER -->
+			<div class="theme-panel hidden-xs hidden-sm">
+				<div class="toggler">
+				</div>
+				<div class="toggler-close">
+				</div>
+				<div class="theme-options">
+					<div class="theme-option theme-colors clearfix">
+						<span>
+						THEME COLOR </span>
+						<ul>
+							<li class="color-default current tooltips" data-style="default" data-container="body" data-original-title="Default">
+							</li>
+							<li class="color-darkblue tooltips" data-style="darkblue" data-container="body" data-original-title="Dark Blue">
+							</li>
+							<li class="color-blue tooltips" data-style="blue" data-container="body" data-original-title="Blue">
+							</li>
+							<li class="color-grey tooltips" data-style="grey" data-container="body" data-original-title="Grey">
+							</li>
+							<li class="color-light tooltips" data-style="light" data-container="body" data-original-title="Light">
+							</li>
+							<li class="color-light2 tooltips" data-style="light2" data-container="body" data-html="true" data-original-title="Light 2">
+							</li>
+						</ul>
+					</div>
+					<div class="theme-option">
+						<span>
+						Theme Style </span>
+						<select class="layout-style-option form-control input-sm">
+							<option value="square" selected="selected">Square corners</option>
+							<option value="rounded">Rounded corners</option>
+						</select>
+					</div>
+					<div class="theme-option">
+						<span>
+						Layout </span>
+						<select class="layout-option form-control input-sm">
+							<option value="fluid" selected="selected">Fluid</option>
+							<option value="boxed">Boxed</option>
+						</select>
+					</div>
+					<div class="theme-option">
+						<span>
+						Header </span>
+						<select class="page-header-option form-control input-sm">
+							<option value="fixed" selected="selected">Fixed</option>
+							<option value="default">Default</option>
+						</select>
+					</div>
+					<div class="theme-option">
+						<span>
+						Top Menu Dropdown</span>
+						<select class="page-header-top-dropdown-style-option form-control input-sm">
+							<option value="light" selected="selected">Light</option>
+							<option value="dark">Dark</option>
+						</select>
+					</div>
+					<div class="theme-option">
+						<span>
+						Sidebar Mode</span>
+						<select class="sidebar-option form-control input-sm">
+							<option value="fixed">Fixed</option>
+							<option value="default" selected="selected">Default</option>
+						</select>
+					</div>
+					<div class="theme-option">
+						<span>
+						Sidebar Menu </span>
+						<select class="sidebar-menu-option form-control input-sm">
+							<option value="accordion" selected="selected">Accordion</option>
+							<option value="hover">Hover</option>
+						</select>
+					</div>
+					<div class="theme-option">
+						<span>
+						Sidebar Style </span>
+						<select class="sidebar-style-option form-control input-sm">
+							<option value="default" selected="selected">Default</option>
+							<option value="light">Light</option>
+						</select>
+					</div>
+					<div class="theme-option">
+						<span>
+						Sidebar Position </span>
+						<select class="sidebar-pos-option form-control input-sm">
+							<option value="left" selected="selected">Left</option>
+							<option value="right">Right</option>
+						</select>
+					</div>
+					<div class="theme-option">
+						<span>
+						Footer </span>
+						<select class="page-footer-option form-control input-sm">
+							<option value="fixed">Fixed</option>
+							<option value="default" selected="selected">Default</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!-- END STYLE CUSTOMIZER -->
+			<!-- BEGIN PAGE HEADER-->
+			<h3 class="page-title">
+			Cập Nhật Người Dùng<small></small>
+			</h3>
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">Trang chủ</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">Quản lý Tin Tức & Sự Kiện</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">Cập nhật tin tức sự kiện</a>
+					</li>
+				</ul>
+			</div>
+			<!-- END PAGE HEADER-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN VALIDATION STATES-->
+					<div class="portlet box purple">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-gift"></i>Thông tin sự kiện
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+								<a href="javascript:;" class="remove">
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="row">
+								<div class="col-md-4 col-md-offset-4">
+									<div class="input-group" style="text-align:left">
+										<input type="text" class="form-control" name="username1" id="username1_input">
+										<span class="input-group-btn">
+											<a href="javascript:;" class="btn green" id="username1_checker">
+												<i class="fa fa-search"></i> Tìm kiếm </a>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix" style="margin-bottom: 10px;"></div>
+							<br>
+							<table class="table table-bordered table-striped table-condensed flip-content">
+							<thead class="flip-content">
+							<tr>
+								<th width="20%">
+									 <input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"/>
+								</th>
+								<th>
+									 Mã Sự Kiện
+								</th>
+								<th class="numeric">
+									 Tiêu đề sự kiện
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="checkbox" class="checkboxes" value="1"/>
+								</td>
+								<td>
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+								<td class="numeric">
+									 AUSTRALIAN AGRICULTURAL COMPANY LIMITED.
+								</td>
+							</tr> 	
+							</tbody>
+							</table> 	
+							<!-- BEGIN FORM-->
+							<form action="#" id="form_sample_1" class="form-horizontal">
+								<div class="form-body">
+									<div class="alert alert-danger display-hide">
+										<button class="close" data-close="alert"></button>
+										You have some form errors. Please check below.
+									</div>
+									<div class="alert alert-success display-hide">
+										<button class="close" data-close="alert"></button>
+										Your form validation is successful!
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">Tiêu đề sự kiện<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<input type="text" name="name" data-required="1" class="form-control"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">Chủ đề<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<input name="email" type="text" class="form-control"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">Nội dung<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<input name="email" type="text" class="form-control"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">Ngày sự kiện<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<input name="email" type="text" class="form-control"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">Ngày kết thúc sự kiện<span class="required">
+										* </span>
+										</label>
+										<div class="col-md-4">
+											<input name="email" type="text" class="form-control"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">Hình ảnh <span class="required">
+										* </span>
+										</label>
+										<div class="row">
+											<div class="col-md-12">
+
+												<br>
+												<form id="fileupload" action="../../assets/global/plugins/jquery-file-upload/server/php/" method="POST" enctype="multipart/form-data">
+													<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+													<div class="row fileupload-buttonbar">
+														<div class="col-lg-7 col-lg-offset-3">
+															<!-- The fileinput-button span is used to style the file input field as button -->
+															<span class="btn green fileinput-button">
+																<i class="fa fa-plus"></i>
+																<span>
+																Add files... </span>
+																<input type="file" name="files[]" multiple="">
+															</span>
+															<!-- <button type="submit" class="btn blue start">
+																<i class="fa fa-upload"></i>
+																<span>
+																Start upload </span>
+															</button>
+															<button type="reset" class="btn warning cancel">
+																<i class="fa fa-ban-circle"></i>
+																<span>
+																Cancel upload </span>
+															</button> -->
+															<button type="button" class="btn red delete">
+																<i class="fa fa-trash"></i>
+																<span>
+																Delete </span>
+															</button>
+															<!-- <input type="checkbox" class="toggle"> -->
+															<!-- The global file processing state -->
+															<!-- <span class="fileupload-process">
+															</span> -->
+														</div>
+														<!-- The global progress information -->
+														<div class="col-lg-5 fileupload-progress fade">
+															<!-- The global progress bar -->
+															<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+																<div class="progress-bar progress-bar-success" style="width:0%;">
+																</div>
+															</div>
+															<!-- The extended global progress information -->
+															<div class="progress-extended">
+																&nbsp;
+															</div>
+														</div>
+													</div>
+													<!-- The table listing the files available for upload/download -->
+													<table role="presentation" class="table table-striped clearfix">
+														<tbody class="files">
+														</tbody>
+													</table>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-actions">
+									<div class="row">
+										<div class="col-md-offset-3 col-md-9">
+											<button type="submit" class="btn green">Cập Nhật</button>
+											<button type="button" class="btn default">Hủy</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							<!-- END FORM-->
+						</div>
+					</div>
+					<!-- END VALIDATION STATES-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+	<div class="page-footer-inner">
+		  2017 &copy; DBMS Training
+	</div>
+	<div class="scroll-to-top">
+		<i class="icon-arrow-up"></i>
+	</div>
+</div>
+<!-- END FOOTER -->
+
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../../assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="../../assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/bootstrap-markdown/lib/markdown.js"></script>
+<!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
+<script src="../../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+<!-- END PAGE LEVEL SCRIPTS -->
+<script src="../../assets/global/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+<!-- The Templates plugin is included to render the upload/download listings -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/vendor/tmpl.min.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/vendor/load-image.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/vendor/canvas-to-blob.min.js"></script>
+<!-- blueimp Gallery script -->
+<script src="../../assets/global/plugins/jquery-file-upload/blueimp-gallery/jquery.blueimp-gallery.min.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/jquery.fileupload-image.js"></script>
+<!-- The File Upload audio preview plugin -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/jquery.fileupload-audio.js"></script>
+<!-- The File Upload video preview plugin -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/jquery.fileupload-video.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="../../assets/global/plugins/jquery-file-upload/js/jquery.fileupload-validate.js"></script>
+<!-- The File Upload user interface plugin -->
+
+<script src="../../assets/global/plugins/jquery-file-upload/js/jquery.fileupload-ui.js"></script>
+<script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+
+<script src="../../assets/admin/pages/scripts/form-fileupload.js"></script>
+<!-- The main application script -->
+<script>
+jQuery(document).ready(function() {    
+   Metronic.init(); // init metronic core componets
+   Layout.init(); // init layout
+   QuickSidebar.init(); // init quick sidebar
+   Demo.init(); // init demo features 
+   Index.init();   
+   Index.initDashboardDaterange();
+   Index.initJQVMAP(); // init index page's custom scripts
+   Index.initCalendar(); // init index page's custom scripts
+   Index.initCharts(); // init index page's custom scripts
+   Index.initChat();
+   Index.initMiniCharts();
+   Tasks.initDashboardWidget();
+});
+</script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
